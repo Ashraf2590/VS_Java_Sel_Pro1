@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-15T21:47:56 IST" name="SeleniumAutomationSuite" finished-at="2025-08-15T21:48:58 IST" duration-ms="62326">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@21de60b4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-08-15T21:47:56 IST" name="WebValidationTest" finished-at="2025-08-15T21:48:58 IST" duration-ms="62326">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@21de60b4]" started-at="2025-08-15T21:47:56 IST" name="setUpClass" finished-at="2025-08-15T21:48:00 IST" duration-ms="4293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a481728]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@21de60b4]" started-at="2025-08-15T21:48:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T21:48:13 IST" duration-ms="12312" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Confirm Alert"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Validations"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at stepDefinitions.WebValidationSteps.i_navigate_to(WebValidationSteps.java:25)
+at ✽.I navigate to "https://the-internet.herokuapp.com/javascript_alerts"(file:///C:/Users/DELL/Desktop/VS_Java_Sel_Pro1/src/test/resources/features/web_validations.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@21de60b4]" started-at="2025-08-15T21:48:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T21:48:30 IST" duration-ms="17294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Wait Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Validations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@21de60b4]" started-at="2025-08-15T21:48:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T21:48:42 IST" duration-ms="11632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Frame Handling"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Validations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@21de60b4]" started-at="2025-08-15T21:48:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-15T21:48:58 IST" duration-ms="15873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Multiple Windows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Web Element Validations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@21de60b4]" started-at="2025-08-15T21:48:58 IST" name="tearDownClass" finished-at="2025-08-15T21:48:58 IST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- WebValidationTest -->
+  </suite> <!-- SeleniumAutomationSuite -->
+</testng-results>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="57.852" tests="4" skipped="0" failures="1" errors="0">
+<testcase classname="Web Element Validations" name="Validate Confirm Alert" time="11.793">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at stepDefinitions.WebValidationSteps.i_navigate_to(WebValidationSteps.java:25)
+	at ✽.I navigate to "https://the-internet.herokuapp.com/javascript_alerts"(file:///C:/Users/DELL/Desktop/VS_Java_Sel_Pro1/src/test/resources/features/web_validations.feature:19)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I initialize the browser "chrome".....................................passed
+Given I navigate to "https://the-internet.herokuapp.com/javascript_alerts"..failed
+When I click on "JS Confirm" button.........................................skipped
+Then I should see alert with text "I am a JS Confirm".......................skipped
+When I dismiss the alert....................................................skipped
+Then I should see result text "You clicked: Cancel".........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Web Element Validations" name="Validate Wait Functionality" time="17.115">
+<system-out><![CDATA[
+Given I initialize the browser "chrome".....................................passed
+Given I navigate to "https://the-internet.herokuapp.com/dynamic_loading/1"..passed
+When I click on start button................................................passed
+Then I should wait for loading to complete..................................passed
+And I should see text "Hello World!"........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Web Element Validations" name="Validate Frame Handling" time="11.559">
+<system-out><![CDATA[
+Given I initialize the browser "chrome".....................................passed
+Given I navigate to "https://the-internet.herokuapp.com/nested_frames"......passed
+When I switch to frame "frame-top"..........................................passed
+And I switch to frame "frame-left"..........................................passed
+Then I should see text "LEFT"...............................................passed
+When I switch to parent frame...............................................passed
+And I switch to frame "frame-right".........................................passed
+Then I should see text "RIGHT"..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Web Element Validations" name="Validate Multiple Windows" time="15.767">
+<system-out><![CDATA[
+Given I initialize the browser "chrome".....................................passed
+Given I navigate to "https://the-internet.herokuapp.com/windows"............passed
+When I click on "Click Here" link...........................................passed
+Then I should have 2 windows open...........................................passed
+When I switch to new window.................................................passed
+Then I should see page title "New Window"...................................passed
+When I close current window.................................................passed
+And I switch back to main window............................................passed
+Then I should see page title "The Internet".................................passed
+]]></system-out>
+</testcase>
+</testsuite>
