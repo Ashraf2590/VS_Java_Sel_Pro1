@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 65.01 s <<< FAILURE! -- in TestSuite
-runners.TestRunner.runScenario["Validate Confirm Alert", "Web Element Validations"](1) -- Time elapsed: 12.82 s <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 85.51 s <<< FAILURE! -- in TestSuite
+runners.TestRunner.runScenario["Validate Confirm Alert", "Web Element Validations"](1) -- Time elapsed: 22.16 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
 	at stepDefinitions.WebValidationSteps.i_navigate_to(WebValidationSteps.java:25)
 	at ✽.I navigate to "https://the-internet.herokuapp.com/javascript_alerts"(file:///C:/Users/DELL/Desktop/VS_Java_Sel_Pro1/src/test/resources/features/web_validations.feature:19)

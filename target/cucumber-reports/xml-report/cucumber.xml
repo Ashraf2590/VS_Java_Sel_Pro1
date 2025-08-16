@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="57.852" tests="4" skipped="0" failures="1" errors="0">
-<testcase classname="Web Element Validations" name="Validate Confirm Alert" time="11.793">
+<testsuite name="Cucumber" time="75.062" tests="4" skipped="0" failures="1" errors="0">
+<testcase classname="Web Element Validations" name="Validate Confirm Alert" time="21.342">
 <failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null">
 <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
 	at stepDefinitions.WebValidationSteps.i_navigate_to(WebValidationSteps.java:25)
@@ -16,7 +16,7 @@ When I dismiss the alert....................................................skip
 Then I should see result text "You clicked: Cancel".........................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Web Element Validations" name="Validate Wait Functionality" time="17.115">
+<testcase classname="Web Element Validations" name="Validate Wait Functionality" time="19.749">
 <system-out><![CDATA[
 Given I initialize the browser "chrome".....................................passed
 Given I navigate to "https://the-internet.herokuapp.com/dynamic_loading/1"..passed
@@ -25,7 +25,7 @@ Then I should wait for loading to complete..................................pass
 And I should see text "Hello World!"........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Web Element Validations" name="Validate Frame Handling" time="11.559">
+<testcase classname="Web Element Validations" name="Validate Frame Handling" time="18.76">
 <system-out><![CDATA[
 Given I initialize the browser "chrome".....................................passed
 Given I navigate to "https://the-internet.herokuapp.com/nested_frames"......passed
@@ -37,7 +37,7 @@ And I switch to frame "frame-right".........................................pass
 Then I should see text "RIGHT"..............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Web Element Validations" name="Validate Multiple Windows" time="15.767">
+<testcase classname="Web Element Validations" name="Validate Multiple Windows" time="13.073">
 <system-out><![CDATA[
 Given I initialize the browser "chrome".....................................passed
 Given I navigate to "https://the-internet.herokuapp.com/windows"............passed
