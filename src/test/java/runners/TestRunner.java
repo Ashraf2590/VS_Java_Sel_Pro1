@@ -14,7 +14,7 @@ import org.testng.annotations.DataProvider;
         "junit:target/cucumber-reports/xml-report/cucumber.xml"
     },
     tags = "@smoke",
-    //tags = "@smoke",
+    tags = "@ashraf",
     monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
