@@ -15,7 +15,7 @@ Feature: Web Element Validations
     Then I should see result text "You successfully clicked an alert"
     Then I close the browser
 
-  @alert3
+  @alert4
   Scenario: Validate Confirm Alert
     Given I navigate to "https://the-internet.herokuapp.com/javascript_alerts"
     When I click on "JS Confirm" button
