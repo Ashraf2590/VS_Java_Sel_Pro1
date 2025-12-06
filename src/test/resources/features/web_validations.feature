@@ -6,15 +6,16 @@ Feature: Web Element Validations
   Background:
     Given I initialize the browser "chrome"
 
-  @alert 
+  @alert @smoke
   Scenario: Validate Alert Handling
     Given I navigate to "https://the-internet.herokuapp.com/javascript_alerts"
     When I click on "JS Alert" button
     Then I should see alert with text "I am a JS Alert"
     When I accept the alert
     Then I should see result text "You successfully clicked an alert"
+    Then I close the browser
 
-  @alert @smoke
+  @alert
   Scenario: Validate Confirm Alert
     Given I navigate to "https://the-internet.herokuapp.com/javascript_alerts"
     When I click on "JS Confirm" button
@@ -30,14 +31,14 @@ Feature: Web Element Validations
     When I enter text "Hello World" in alert
     Then I should see result text "You entered: Hello World"
 
-  @wait @smoke
+  @wait
   Scenario: Validate Wait Functionality
     Given I navigate to "https://the-internet.herokuapp.com/dynamic_loading/1"
     When I click on start button
     Then I should wait for loading to complete
     And I should see text "Hello World!"
 
-  @frame @smoke
+  @frame
   Scenario: Validate Frame Handling
     Given I navigate to "https://the-internet.herokuapp.com/nested_frames"
     When I switch to frame "frame-top"
@@ -47,7 +48,7 @@ Feature: Web Element Validations
     And I switch to frame "frame-right"
     Then I should see text "RIGHT"
 
-  @window @smoke
+  @window
   Scenario: Validate Multiple Windows
     Given I navigate to "https://the-internet.herokuapp.com/windows"
     When I click on "Click Here" link

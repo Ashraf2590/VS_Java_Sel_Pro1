@@ -14,14 +14,16 @@ public class WebValidationSteps extends BasePage {
     
     private String mainWindowHandle;
     private WebElement resultElement;
-    
+
     @Given("I initialize the browser {string}")
     public void i_initialize_the_browser(String browserName) {
         WebDriverManager.initializeDriver(browserName);
     }
-    
+
     @Given("I navigate to {string}")
     public void i_navigate_to(String url) {
+        this.driver = WebDriverManager.getDriver();
+        this.wait = WebDriverManager.getWait();
         driver.get(url);
         mainWindowHandle = getCurrentWindowHandle();
     }
